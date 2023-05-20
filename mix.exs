@@ -5,11 +5,17 @@ defmodule Html2mdEx.MixProject do
     [
       app: :html2md_ex,
       description: "Convert HTML to Markdown",
+      source_url: "https://github.com/brendon9x/html2md_ex",
+      homepage_url: "https://github.com/brendon9x/html2md_ex",
       version: "0.1.0",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      package: package()
+      package: package(),
+      docs: [
+        main: "README.md",
+        extras: ["README.md"]
+      ]
     ]
   end
 
@@ -30,7 +36,7 @@ defmodule Html2mdEx.MixProject do
 
   defp package do
     [
-      files: ["lib", "mix.exs", "README.md", "priv", "native", "c_src"],
+      files: ["lib", "mix.exs", "README.md", "priv", "native"],
       maintainers: ["Your Name"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/username/repo"}
