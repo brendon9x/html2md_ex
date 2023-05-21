@@ -13,7 +13,7 @@ defmodule Html2mdEx.MixProject do
       deps: deps(),
       package: package(),
       docs: [
-        main: "README.md",
+        main: "readme",
         extras: ["README.md"]
       ]
     ]
