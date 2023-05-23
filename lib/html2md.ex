@@ -1,5 +1,8 @@
 defmodule Html2MdEx do
-  use Rustler, otp_app: :html2md_ex, crate: "html2ex_nif"
+  use Rustler,
+    otp_app: :html2md_ex,
+    crate: "html2ex_nif",
+    cargo: :system
 
   @moduledoc """
   HTML2Md_Ex is a Rustler NIF that converts HTML to Markdown.
