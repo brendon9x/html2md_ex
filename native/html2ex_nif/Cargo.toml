@@ -10,5 +10,5 @@ path = "src/lib.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
-rustler = "0.25.0"
+rustler = {version =  "0.33.0", features = ["nif_version_2_17"]}
 html2md = "0.2.14"

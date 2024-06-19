@@ -29,7 +29,7 @@ defmodule Html2mdEx.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:rustler, "~> 0.25.0"},
+      {:rustler, "~> 0.33.0"},
       {:ex_doc, "~> 0.18", only: :dev}
     ]
   end
@@ -37,7 +37,7 @@ defmodule Html2mdEx.MixProject do
   defp package do
     [
       files: ["lib", "mix.exs", "README.md", "priv", "native"],
-      maintainers: ["Your Name"],
+      maintainers: ["Abhishek Tripathi"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/username/repo"}
     ]
